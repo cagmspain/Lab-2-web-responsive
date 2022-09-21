@@ -6,6 +6,7 @@
 body {
 	display: grid;
 	min-height: 100vh;
+	font-family: sans-serif;
 
 	grid-template-rows: 10rem 21rem 1fr;
 	grid-template-areas:
@@ -125,6 +126,15 @@ body > main {
 	flex-wrap: wrap;
 	justify-content: space-around;
 	gap: 1rem;
+}
+body > main > header > ul {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	list-style: none;
+	gap: 0.5rem;
+	width: 350px;
+	font-weight: bold;
 }
 body > main > section > img {
 	width: 300px;
