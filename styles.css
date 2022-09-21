@@ -128,6 +128,20 @@ body > main {
 	justify-content: space-around;
 	gap: 1rem;
 }
+body > main > section {
+	display: flex;
+	gap: 15px;
+	align-items: center;
+}
+body > main > section > div.work {
+	background-color: black;
+	color: white;
+	border-radius: 25px;
+	width: 100px;
+	text-align: center;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
 body > main > header > ul {
 	display: flex;
 	justify-content: space-between;
@@ -242,32 +256,29 @@ body > main > div > section > img {
 		gap: 1rem;
 		justify-content: space-around;
 	}
-	body > main > header {
+	main > section {
 		display: flex;
 		justify-content: flex-start;
+		align-items: center;
+		gap: 5rem;
 		width: 100%;
+		padding-bottom: 2rem;
 		padding-top: 4rem;
-		padding-bottom: 1.5rem;
+		padding-left: 3rem;
 	}
-	main > header > ul > li.work {
+	main > section > div {
+		color: black;
+		font-weight: bold;
+	}
+	main > section > div.work {
 		background-color: black;
 		border-radius: 25px;
-		color: white;
-		width: 100px;
 		height: 30px;
-		padding-top: 10px;
+		width: 100px;
+		color: white;
 		text-align: center;
-	}
-	main > header > ul > li.panel {
-		width: 200px;
-	}
-	body > main > header.foto > ul.header {
 		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-		padding-left: 5px;
-	}
-	body > header > div.first {
-		background-color: rgba(0, 0, 0, 0.3);
+		justify-content: center;
+		align-items: center;
 	}
 } ;
