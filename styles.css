@@ -37,6 +37,7 @@ body > header > div.first > div.mobile {
 }
 body > header > div.first > div.mobile > button {
 	background-color: blue;
+	border: none;
 	border-radius: 25px;
 	color: white;
 	width: 150px;
@@ -136,9 +137,9 @@ body > main > header > ul {
 	width: 350px;
 	font-weight: bold;
 }
-body > main > section > img {
-	width: 300px;
-	height: 300px;
+body > main > div > section > img {
+	width: 400px;
+	height: 400px;
 }
 /*
 ##########################
@@ -149,10 +150,19 @@ body > main > section > img {
 @media (min-width: 600px) {
 	body {
 		grid-template-rows: 20rem 1fr;
-		grid-template-columns: 15rem 1fr;
+		grid-template-columns: 28rem 1fr;
 		grid-template-areas:
 			"header header"
 			"aside main";
+	}
+	body > header {
+		grid-area: header;
+	}
+	body > aside {
+		grid-area: aside;
+	}
+	body > main {
+		grid-area: main;
 	}
 	body > header > div.first > div.mobile {
 		display: none;
@@ -160,5 +170,101 @@ body > main > section > img {
 	body > header > div.first > div.desktop {
 		display: flex;
 		justify-content: space-between;
+		align-items: center;
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+		border-bottom: 1px solid rgb(192, 201, 210);
+	}
+	body > header > div > div > ul {
+		display: flex;
+		list-style: none;
+		gap: 1rem;
+	}
+	body > header > div > div > ul > li > a {
+		text-decoration: none;
+		color: white;
+	}
+	body > header > div > div > h1,
+	h2 {
+		color: white;
+	}
+	body > header > div > div > form > input {
+		border-radius: 25px;
+		background-color: rgba(255, 255, 255, 0.6);
+		border: none;
+		width: 300px;
+		height: 40px;
+		padding-left: 1rem;
+	}
+	body > header > div > div > div > button.whiteuno {
+		background-color: white;
+		width: 130px;
+		height: 40px;
+		border-radius: 25px;
+		border: none;
+	}
+	body > header > div > div > div > button.bluedos {
+		background-color: blue;
+		width: 130px;
+		height: 40px;
+		border-radius: 25px;
+		border: none;
+		color: white;
+	}
+	body > header {
+		position: relative;
+	}
+	body > aside {
+		display: flex;
+		flex-direction: column;
+		position: absolute;
+		top: 130px;
+		left: 100px;
+		background-color: white;
+		min-height: 100vh;
+		border: solid 1px lightgray;
+	}
+	body > aside > div > img {
+		transform: none;
+	}
+	body > aside > div > div {
+		transform: none;
+	}
+	body > aside > div > div > div > button.oneblue {
+		border: none;
+	}
+	body > aside > div > div > div > button.twowhite {
+		border: 1px solid rgba(138, 138, 221, 0.4);
+	}
+	body > main > div {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 1rem;
+		justify-content: space-around;
+	}
+	body > main > header {
+		display: flex;
+		justify-content: flex-start;
+		width: 100%;
+		padding-top: 4rem;
+		padding-bottom: 1.5rem;
+	}
+	main > header > ul > li.work {
+		background-color: black;
+		border-radius: 25px;
+		color: white;
+		width: 100px;
+		height: 30px;
+		padding-top: 10px;
+		text-align: center;
+	}
+	main > header > ul > li.panel {
+		width: 200px;
+	}
+	body > main > header.foto > ul.header {
+		display: grid;
+		flex-direction: column;
+		justify-content: space-between;
+		padding-left: 5px;
 	}
 } ;
