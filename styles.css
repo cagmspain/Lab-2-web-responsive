@@ -262,9 +262,12 @@ body > main > div > section > img {
 		width: 200px;
 	}
 	body > main > header.foto > ul.header {
-		display: grid;
-		flex-direction: column;
+		display: flex;
+		flex-direction: row;
 		justify-content: space-between;
 		padding-left: 5px;
+	}
+	body > header > div.first {
+		background-color: rgba(0, 0, 0, 0.3);
 	}
 } ;
